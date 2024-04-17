@@ -1,0 +1,242 @@
+<!-- 
+    Auteur: Dewi Zheng
+    Klas: SD-24
+    Datum: 17/12/2023
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T02 Project</title>
+
+    <!-- Dit CSS bestand is bedoeld voor alle pagina's.  -->
+    <link rel="stylesheet" href="/styles/stylesheet.css">
+
+    <!-- Dit CSS bestand is alleen voor de pagina "resultaten". -->
+    <link rel="stylesheet" href="/styles/stylesheet_resultaten.css">
+
+    <!-- Dit JS-bestand maakt de cijferlijst interactief op de "resultaten"-pagina. -->
+    <script src="/scripts/cijferlijst.js" defer></script>
+
+ </head>
+ <body>
+
+    <!-- In de headergedeelte komen een logo, banner en navigatie te staan. -->
+    <header>
+        <nav>
+            <ul>
+                <!-- Dit logo zegt over mijn bijbaan, want dit is de naam
+                van mijn bedrijf waar mijn ouders werken. -->
+                 <div id="Logo"><img id="Logo" src="/images/Chezwiellie.jpg"></div>
+
+                        <!-- Pagina Home -->
+               <li>
+                    <a href="/index.html">Home</a>
+               </li>
+       
+                        <!-- Pagina Portfolio -->
+               <li> 
+                     <a href="/pages/Portfolio/portfolio.html">Portfolio</a>
+               </li>
+       
+                       <!-- Pagina Resultaten -->
+               <li> 
+                     <a href="resultaten.html">Resultaten</a>
+               </li>
+       
+                        <!-- Pagina Hobby's -->
+               <li> 
+                     <a href="/pages/Hobby's/hobby's.html">Hobby's</a>
+               </li>
+       
+                        <!-- Pagina Ervaringen -->
+                <li>
+                    <a href="/pages/Ervaringen/ervaringen.html">Ervaringen</a>
+               </li>
+       
+             </ul>
+        </nav>
+
+        <!-- Ik wil een broodkruimelspoor toevoegen onder de 
+            navigatie. Het gaat meebewegen als ik de scherm groter of kleiner maak,
+            Bovendien heeft deze broodkruimelspoor nog geen vaste positite. 
+        -->
+
+        <ul class="ul_Breadcrumb">
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <a href="/pages/Resultaten/resultaten.html">Resultaten</a>
+            </li>
+        </ul>
+    </header>
+
+      <!-- Bread crumbs navigatie -->
+
+    <!-- Main is als het ware gedeelte tussen de header en de footer -->
+    <main>
+        <!-- In de article komen er kopteksten, paragrafen en afbeeldingen -->
+        <article>
+
+
+            <button onclick="ShowMarks()">Cijfers weergeven</button>
+
+            <table>
+                
+                <!-- Inhoud Cijferlijst -->
+                <tr>
+                    <th>
+                        Vak
+                    </th>
+
+                    <th>
+                        Cijfer
+                    </th>
+                    
+                </tr>
+
+                <!-- Nederlands -->
+                <tr>
+                    <td class="Deel_Vakken">
+                        Nederlands 
+                    </td>
+
+                    <td class="Resultaat_Beoordelingen">
+                    
+                    </td>
+                </tr>
+
+                <!-- Engels -->
+                <tr>
+                    <td class="Deel_Vakken">
+                        Engels
+                    </td>
+
+                    <td class="Resultaat_Beoordelingen">
+                        
+                    </td>
+                    
+                </tr>
+
+                 <!-- Rekenen -->
+                <tr>
+                    <td class="Deel_Vakken">
+                        Rekenen
+
+                    </td>
+
+                    <td class="Resultaat_Beoordelingen">
+                        
+                    </td>
+                    
+                </tr>
+
+                <!-- Burgerschap -->
+                <tr>
+                    <td class="Deel_Vakken">
+                        Burgerschap
+                    </td>
+
+                    <td class="Resultaat_Beoordelingen">
+                        
+                    </td>
+                </tr>
+
+                <!-- Plannen en Ontwerpen -->
+                <tr>
+                    <td class="Deel_Vakken">
+                        Plannen en Ontwerpen 
+                    </td>
+
+                    <td class="Resultaat_Beoordelingen">
+                        
+                    </td>
+                    
+                </tr>
+
+                <!-- Realiseren -->
+                <tr>
+                    <td class="Deel_Vakken">
+                        Realiseren
+                    </td>
+
+                    <td class="Resultaat_Beoordelingen">
+                        
+                    </td>
+                    
+                </tr>
+
+                <!-- Computervaardigheid -->
+                <tr>
+                    <td class="Deel_Vakken">
+                        Computervaardigheid
+                    </td>
+
+                    <td class="Resultaat_Beoordelingen">
+                        
+                    </td>
+                    
+                </tr>
+
+                <!-- Testen en Verbeteren -->
+                <tr>
+                    <td class="Deel_Vakken">
+                        Testen en Verbeteren
+                    </td>
+
+                    <td class="Resultaat_Beoordelingen">
+                        
+                    </td>
+                    
+                </tr>
+            
+            </table>
+
+            
+            <div id="Resultaten_TekstContainer">
+                <h1>Resultaten</h1>
+            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate! Cumque maxime aperiam minus molestias nobis tenetur. Ducimus laboriosam veritatis veniam repellat nesciunt exercitationem similique, recusandae itaque fugit deleniti aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate! Cumque maxime aperiam minus molestias nobis tenetur</p></span>
+            </div>
+          </div>
+
+        </article>
+    </main>
+
+    <!-- In de footer komen de contactgegevens of een sitemap te staan -->
+    <footer id="footer">
+    
+     <!-- In de footer_layout komen naam "Contactgegevens" en de bijbehorende gegevens -->
+     <div id="footer_layout">
+        
+        <!-- De tekst "Contactgegevens" -->
+        <div id="tekst_contactgegevens">Contactgegevens:</div>
+
+       <!-- Bijbehorende gegevens  -->
+        <div id="gegevens">
+            
+             <!-- Box 1:Voor -achternaam en adres -->
+             <div id="footer_box1">
+
+               <div id="voor-achternaam">Voor- en achternaam: Dewi Zheng</div>
+
+               <div id="adres">Adres: Smidstraat 55, Cuijk</div>
+            </div>
+           
+            <!-- Box 2: Email en Nummer Gegevens  -->
+            <div id="footer_box2">
+
+               <div id="e-mail">E-mail: dewi.zheng@edu-kw1c.nl</div>
+
+               <div id="nummer">Nummer: 06-687534948</div>
+            </div>
+        </div>
+
+      </div>
+
+    </footer> 
+
+ </body>
+   
+</html>

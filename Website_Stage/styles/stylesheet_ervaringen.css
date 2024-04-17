@@ -1,0 +1,126 @@
+/* <!-- 
+    Auteur: Dewi Zheng
+    Klas: SD-24
+    Datum: 17/12/2023
+*/
+
+
+/* Navigatie */
+/* De achtergrond kleur voor de navigatie en de navigatie is gecentreerd */
+nav
+{
+    background-color: #858282;
+    width: 95%;
+    border-radius: 0px 80pt 80pt 0px;
+}
+
+/* Met deze code staat de navigatie op een rij, 
+netjes gemaakt en er is ruimte gegeven voor de navigatie knoppen.  */
+
+ul
+{
+    display: flex;
+}
+
+li
+{
+    list-style-type: none;
+    width: 150%;
+    margin: auto 0;
+} 
+
+/* De kleur en opmaak is gemaakt net als in de functioneel ontwerp */
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Logo */
+#Logo
+{
+   width: 70%;
+   display: flex;
+}
+
+/* Breadcrumbs */
+.ul_Breadcrumb 
+{   
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+/* Er komt een slash symbool (/) voor een list item  */
+
+.ul_Breadcrumb li+li:before 
+{ 
+    content: "/\00a0";
+}
+
+/* Er komt een teken van (>...) na een list item  */
+
+.ul_Breadcrumb li+li::after
+{
+    content: "> ...";
+} 
+
+/* De breadcrumbs zijn nu op een rij  */
+
+.ul_Breadcrumb li 
+{
+    display: inline;
+}
+
+/* Een vaste kleurtje geven aan de breadcrumb */
+.ul_Breadcrumb a
+{
+    color: #858282;
+}
+
+#Resultaten_Contents
+{
+    margin: 80px 10px 10px 10px;
+}
+
+
+#Ervaringen_grid-container
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.KoptekstLayout_Ervaringen
+{
+    text-align: center;
+}
+
+
+#Ervaringen_AllContainer img
+{
+    width: 50%;
+}
+
+
+/* Hier komt de titel en de tekst 
+over de pagina resultaten */
+#TitelErvaringen_TekstContainer
+{
+    width: 80vw;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+span > h6
+{
+    font-size: 50%;
+}
+
+#Video_Toothless
+{
+   float: left;
+   object-fit: fill;
+}
+
+
+

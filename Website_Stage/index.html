@@ -1,0 +1,149 @@
+<!-- 
+    Auteur: Dewi Zheng
+    Klas: SD-24
+    Datum: 17/12/2023
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titel voor deze project -->
+    <title>T02 Project</title>
+
+    <!-- Dit CSS bestand is bedoeld voor alle pagina's.  -->
+    <link rel="stylesheet" href="/styles/stylesheet.css">
+
+    <!-- Dit CSS bestand is alleen voor de pagina "home". -->
+    <link rel="stylesheet" href="/styles/stylesheet_startpagina.css">
+
+ </head>
+ <body>
+
+    <!-- In de headergedeelte komen een logo, banner en navigatie te staan. -->
+    <header>
+       <h1>
+        <!-- Dit logo zegt over mijn bijbaan, want dit is de naam
+        van mijn bedrijf waar mijn ouders werken. -->
+        <img id="Logo" src="/images/Chezwiellie.jpg" alt="logo">D. Zheng C.S Web Development Project
+       </h1>
+        <nav>
+            
+            <ul>
+                        <!-- Pagina Home -->
+               
+                <li>
+                    <a href="index.html">Home</a>
+               </li>
+                        <!-- Pagina Portfolio -->
+               <li> 
+                     <a href="pages/Portfolio/portfolio.html">Portfolio</a>
+
+                       <!-- Pagina Resultaten -->
+               <li> 
+                     <a href="pages/Resultaten/resultaten.html">Resultaten</a>
+               </li>
+       
+                         <!-- Pagina Hobby's -->
+               <li> 
+                     <a href="pages/Hobby's/hobby's.html">Hobby's</a>
+               </li>
+       
+                         <!-- Pagina Ervaringen -->
+                <li>
+                    <a href="pages/Ervaringen/ervaringen.html">Ervaringen</a>
+               </li>
+             </ul>   
+        </nav>
+
+              <!-- Ik wil een broodkruimelspoor toevoegen onder de 
+                navigatie. Het gaat meebewegen als ik de scherm groter of kleiner maak,
+                Bovendien heeft deze broodkruimelspoor nog geen vaste positite. 
+               -->
+              <div id="BreadCrumb_Container">
+
+                <ul id="BreadCrumb_ul">
+                    <li><a id="BreadCrumbLinks" href="/index.html">Home > ...</a></li>
+                 </ul>
+                 
+              </div>
+
+    </header>
+<!-- Main is als het ware gedeelte tussen de header en de footer. -->
+<main>
+    <!-- In de article komen er kopteksten, paragrafen en afbeeldingen. -->
+    <article>
+            <!-- Alle bezoekers met een warme welkom begroeten. -->
+            <h2 id="WarmeWelkom_Startpagina">Welkom, bezoeker!</h2>
+            <br>
+        
+        <figure>
+            
+            <!-- Een afbeelding van mijn selfie  -->
+            <img id="Selfie_Startpagina" src="/images/Selfie.jpg" alt="selfie">
+
+            <figcaption id="TitleIntroductie_Figcaption">
+            <h3>Introductie</h3></figcaption>
+            
+            
+            <!-- Hier ga ik mezelf voorstellen -->
+            <figcaption id="VoorstellenIntroductie_Figcaption">
+            <p>Mijn naam is Dewi. Samen woon ik met mijn ouders en mijn zusje in Cuijk.</p></div>
+
+            <br>
+            
+            <p>Ik ben denkbeeldig, rustig en nieuwsgierig. 
+            In mijn vrije tijd doe ik graag aan gamen, films kijken, lezen, nieuwe dingen uitproberen en
+            etc.</p></div>
+            
+            <br>
+
+            <p>Ik vind het leuk om in een kleine groepje samen te werken aan een groot project. 
+            Technisch denken, problemen oplossen, ideeën verzinnen vind ik erg interessant en intrigerend</p></div>
+            </figcaption>
+              
+        </figure>
+
+    </article>
+
+</main>
+
+    <!-- In de footer komen de contactgegevens of een sitemap te staan -->
+    <footer id="footer">
+    
+    <!-- In de footer_layout komen naam "Contactgegevens" en de bijbehorende gegevens -->
+      <div id="footer_layout">
+        
+        <!-- De naam "Contactgegevens" -->
+        <div id="tekst_contactgegevens">Contactgegevens:</div>
+
+       <!-- Gegevens zoals mijn voor -achternaam, mijn adres, mijn e-mail adres en mijn nummer  -->
+        <div id="gegevens">
+            
+            <!-- Box 1:Voor -achternaam en adres -->
+            <div class="footer_boxes">
+
+                 <!-- Voor-achternaam -->
+                 <div id="voor-achternaam">Voor- en achternaam: Dewi Zheng</div>
+
+                    <!-- Adres -->
+                 <div id="adres">Adres: Smidstraat 55, Cuijk</div>
+            </div>
+           
+            <!-- Box 2: Email en Nummer Gegevens  -->
+            <div class="footer_boxes">
+
+                 <!-- Email -->
+                 <div id="e-mail">E-mail: dewi.zheng@edu-kw1c.nl</div>
+
+                 <!-- Nummer -->
+                 <div id="nummer">Nummer: 06-687534948</div>
+           </div>
+        </div>
+
+     </div>
+
+     </footer>
+    
+  </body>
+</html>

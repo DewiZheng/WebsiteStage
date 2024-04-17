@@ -1,0 +1,176 @@
+/* 
+    Auteur: Dewi Zheng
+    Klas: SD-24
+    Datum: 17/12/2023
+*/
+
+/* Lettertype voor de layout */
+@font-face 
+{
+    font-family: "Font_Inter";
+    src: url(/fonts/static/Inter-Light.ttf);
+}
+
+/* Navigatie */
+/* De achtergrond kleur voor de navigatie en de navigatie is gecentreerd */
+nav
+{
+    background-color: #858282;
+    width: 95%;
+    border-radius: 0px 80pt 80pt 0px;
+}
+
+/* Met deze code staat de navigatie op een rij, 
+netjes gemaakt en er is ruimte gegeven voor de navigatie knoppen.  */
+
+ul
+{
+    display: flex;
+}
+
+li
+{
+    list-style-type: none;
+    width: 150%;
+    margin: auto 0;
+} 
+
+/* De kleur en opmaak is gemaakt net als in de functioneel ontwerp */
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Logo */
+#Logo
+{
+   width: 70%;
+   display: flex;
+}
+
+/* Breadcrumbs */
+.ul_Breadcrumb 
+{   
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+/* Er komt een slash symbool (/) voor een list item  */
+
+.ul_Breadcrumb li+li:before 
+{ 
+    content: "/\00a0";
+}
+
+/* Er komt een teken van (>...) na een list item  */
+
+.ul_Breadcrumb li+li::after
+{
+    content: "> ...";
+} 
+
+/* De breadcrumbs zijn nu op een rij  */
+
+.ul_Breadcrumb li 
+{
+    display: inline;
+}
+
+/* Een vaste kleurtje geven aan de breadcrumb */
+.ul_Breadcrumb a
+{
+    color: #858282;
+}
+
+article
+{
+    text-align: center;
+}
+
+.Content_Container
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.grid-container
+{
+    margin-top: 20pt;
+    display: grid;
+    grid-template-columns: 220pt 220pt;
+    grid-template-rows: 250pt 250pt;
+    /* Hulpmiddel */
+    width:fit-content;
+}
+
+
+.grid-container img
+{
+    width: 50%;
+    margin-top: 2.5%;
+}
+
+#Portfolio_Tekst
+{
+    float: left;
+    margin: 10px;
+}
+
+
+.grid-container p
+{
+    font-size:x-small;
+    margin: 10px;
+}
+
+
+/* Opmaak voor de kopjes */
+span
+{
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
+
+@media screen and (min-width: 1000px)
+{
+    /* Grid-container */
+    .grid-container 
+    {
+        margin-top: 20pt;
+        display: grid;
+        grid-template-columns: 500pt 500pt;
+        grid-template-rows: 300pt 300pt;
+    }
+    .grid-container img
+    {
+        width: 50%;
+    }
+}
+
+
+
+@media screen and (min-width: 850px) and (max-width: 1000px)
+{
+    /* Grid-container */
+    .grid-container 
+    {
+        margin-top: 20pt;
+        display: grid;
+        grid-template-columns: 350pt 350pt;
+        grid-template-rows: 350pt 300pt;
+    }
+    .grid-container img
+    {
+        width: 80%;
+    }
+}
+
+
+
+

@@ -1,0 +1,176 @@
+<!-- 
+    Auteur: Dewi Zheng
+    Klas: SD-24
+    Datum: 17/12/2023
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T02 Project</title>
+
+    <!-- Dit CSS bestand is bedoeld voor alle pagina's.  -->
+    <link rel="stylesheet" href="/styles/stylesheet.css">
+
+    <!-- Dit CSS bestand is alleen voor de pagina "portfolio". -->
+    <link rel="stylesheet" href="/styles/stylesheet_portfolio.css">
+
+ </head>
+ <body>
+ 
+    <!-- In de headergedeelte komen een logo, banner en navigatie te staan. -->
+    <header>
+        <nav>    
+            <ul>  
+                <!-- Dit logo zegt over mijn bijbaan, want dit is de naam
+                van mijn bedrijf waar mijn ouders werken. -->
+                <div id="Logo"><img id="Logo" src="/images/Chezwiellie.jpg"></div>
+
+                      <!-- Pagina Home -->
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+
+                    <!-- Pagina Portfolio -->
+            <li> 
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+       
+                    <!-- Pagina Resultaten -->
+            <li> 
+                <a href="/pages/Resultaten/resultaten.html">Resultaten</a>
+            </li>
+       
+                    <!-- Pagina Hobby's -->
+            <li> 
+                <a href="/pages/Hobby's/hobby's.html">Hobby's</a>
+            </li>
+       
+                <!-- Pagina Ervaringen -->
+            <li>
+                <a href="/pages/Ervaringen/ervaringen.html">Ervaringen</a>
+            </li>
+        </ul>
+    </nav>
+        
+        <!-- Ik wil een broodkruimelspoor toevoegen onder de 
+            navigatie. Het gaat meebewegen als ik de scherm groter of kleiner maak,
+            Bovendien heeft deze broodkruimelspoor nog geen vaste positite. 
+        -->
+        <ul class="ul_Breadcrumb">
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <a href="/pages/Portfolio/portfolio.html">Portfolio</a>
+            </li>
+        </ul>    
+    </header>
+
+    <!-- Main is als het ware gedeelte tussen de header en de footer -->
+    <main>
+        <!-- In de article komen er kopteksten, paragrafen en afbeeldingen -->
+        <article>
+        
+        <div class="Content_Container">
+
+             <div class="grid-container">
+
+             <div class="Computervaardigheden_Portfolio">
+                <span>Opdracht: Computervaardigheden</span>]
+
+                <br>
+
+                <img src="/images/Computervaardigheden_Portfolio.png">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto deserunt 
+                    animi assumenda a voluptatem rerum quasi explicabo officiis laborum non 
+                    commodi, temporibus eum expedita quidem distinctio eos at doloremque adipisci.
+                </p>
+             </div>
+
+             <div class="Plannen_en_Ontwerpen_Portfolio">
+                <span>Opdracht: Plannen en Ontwerpen</span>
+
+                <br>
+
+                <img src="/images/Plannen&Ontwerpen_Portfolio.png">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto deserunt 
+                    animi assumenda a voluptatem rerum quasi explicabo officiis laborum non 
+                    commodi, temporibus eum expedita quidem distinctio eos at doloremque adipisci.
+                </p>
+            </div>
+            
+             <div class="Realiseren_Portfolio">
+                <span>Opdracht: Realiseren</span>
+                
+                <br>
+
+                <img src="/images/Realiseren_Portfolio.png">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto deserunt 
+                    animi assumenda a voluptatem rerum quasi explicabo officiis laborum non 
+                    commodi, temporibus eum expedita quidem distinctio eos at doloremque adipisci.
+                </p>
+            </div>
+                <div class="Testen_en_Verbeteren_Portfolio">
+                <span>Opracht: Testen en Verbeteren</span>
+
+                <br>
+
+                <img src="/images/Testen&Verbeteren_Portfolio.png">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto deserunt 
+                    animi assumenda a voluptatem rerum quasi explicabo officiis laborum non 
+                    commodi, temporibus eum expedita quidem distinctio eos at doloremque adipisci.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Een beschrijving over deze pagina -->
+<!--     
+    <div id="Portfolio_Tekst">
+    <h1>Portfolio</h1>
+    </div> -->
+
+    </article>
+    </main>
+    
+    <!-- In de footer komen de contactgegevens of een sitemap te staan -->
+    <footer id="footer">
+    
+     <!-- In de footer_layout komen naam "Contactgegevens" en de bijbehorende gegevens -->
+     <div id="footer_layout">
+        
+        <!-- De tekst "Contactgegevens" -->
+        <div id="tekst_contactgegevens">Contactgegevens:</div>
+
+        <!-- Bijbehorende gegevens  -->
+        <div id="gegevens">
+            
+            <!-- Box 1:Voor -achternaam en adres -->
+            <div id="footer_box1">
+
+               <div id="voor-achternaam">Voor- en achternaam: Dewi Zheng</div>
+
+               <div id="adres">Adres: Smidstraat 55, Cuijk</div>
+            </div>
+
+            <!-- Box 2: Email en Nummer Gegevens  -->
+            <div id="footer_box2">
+
+               <div id="e-mail">E-mail: dewi.zheng@edu-kw1c.nl</div>
+
+               <div id="nummer">Nummer: 06-687534948</div>
+            </div>
+        </div>
+
+      </div>
+
+    </footer>
+
+ </body>
+</html>

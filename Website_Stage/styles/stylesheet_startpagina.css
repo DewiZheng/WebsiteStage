@@ -1,0 +1,172 @@
+/* 
+    Auteur: Dewi Zheng
+    Klas: SD-24
+    Datum: 17/12/2023
+*/
+
+/* Layouts */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Font_Inter";
+}
+
+
+/* De eerst kopje 
+D.Zheng C.S Web Development Project */
+h1
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Logo startpagina */
+#Logo
+{
+   max-width: 15%;
+   max-height: 15%;
+   margin: 20px;
+   vertical-align: middle;
+}
+
+/* Navigatie */
+
+/* De achtergrond kleur voor de navigatie en de navigatie is gecentreerd */
+nav
+{
+    background-color: #858282;
+    /* margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%; */
+    margin: 0 auto;
+    margin-top: 30pt;
+    margin-bottom: 3pt;
+    border-radius: 25px;
+    text-align: center;
+    width: fit-content;
+}
+
+
+/* Met deze code staat de navigatie op een rij, 
+netjes gemaakt en er is ruimte gegeven voor de navigatie knoppen.  */
+li
+{
+    display: inline-block;
+    list-style-type: none;
+    width: 80pt;
+}
+
+
+/* De kleur en opmaak is gemaakt net als in de functioneel ontwerp */
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Breadcrumb */
+
+#BreadCrumb_Container
+{
+    margin-left: 100px;
+}
+
+#BreadCrumb_ul
+{
+   margin-left: auto 0;
+}
+
+#BreadCrumbLinks
+{
+   color: #858282;
+}
+
+
+/* De tweede koptekst "Welkom, bezoeker! */
+
+#WarmeWelkom_Startpagina
+{
+    text-align: center;
+    margin-top: 10%;
+}
+
+/* Selfie startpagina */
+#Selfie_Startpagina
+{
+    max-width: 15em;
+}
+
+/* Met text-align in figure staat mijn afbeelding ook gecentreerd */
+figure
+{
+    text-align: center;
+}
+
+/* De woord Introductie */
+#TitleIntroductie_Figcaption
+{
+    font-size: small;
+    margin-top: 3pt;
+}
+
+/* De alinea's onder Introductie */
+#VoorstellenIntroductie_Figcaption
+{
+    font-weight: bolder;
+    font-size: small;
+    margin: 5% 10% 10% 10%;
+}
+
+/* De eerst letter van ieder paragraaf worden geselecteerd */
+p::first-letter
+{
+    font-size: 200%;
+    color: cadetblue;
+}
+
+/* De eerste lijnen van ieder paragraaf worden geselecteerd */
+p::first-line {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+/* Footer */
+#footer
+{
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+    padding: 5pt;
+    position: fixed;
+}
+
+/* Teksten worden gepositioneerd met flexbox en de lettergrootte zijn aangepast */
+#footer_layout
+{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.75em;
+}
+
+/* De elementen in #gegevens worden gepositioneerd met flexbox */
+#gegevens
+{
+    display: flex;
+}
+
+/*  */
+#tekst_contactgegevens
+{
+   font-size: larger; 
+   position: relative;
+   bottom: -0.75em;  
+}
+
+/* Teksten ruimte geven voor de footers */
+.footer_boxes
+{
+    margin: 5px;
+}

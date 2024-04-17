@@ -1,0 +1,81 @@
+/* <!-- 
+    Auteur: Dewi Zheng
+    Klas: SD-24
+    Datum: 17/12/2023
+*/
+
+
+/* Lettertype voor de layout */
+
+@font-face {
+    font-family: "Font_Inter";
+    src: url(/fonts/static/Inter-Light.ttf);
+}
+
+/* Layouts */
+*
+{
+    font-family: "Font_Inter";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Achtergrond */
+body
+{
+    background-color: #bdd6ee;
+    margin: 0;
+}
+
+/* Footer */
+#footer
+{
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+    padding: 5pt;
+    position: fixed;
+}
+
+/* Teksten worden gepositioneerd met flexbox en de lettergrootte zijn aangepast */
+#footer_layout
+{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.75em;
+}
+
+/* De elementen in #gegevens worden gepositioneerd met flexbox */
+#gegevens
+{
+    display: flex;
+}
+
+/*  */
+#tekst_contactgegevens
+{
+   font-size: larger; 
+   position: relative;
+   bottom: -0.75em;  
+}
+
+/* Met margin in de footer_box1 en footer_box2 
+maakt er meer witregels in de footer. */
+#footer_box1
+{
+    margin: 5px;
+}
+
+#footer_box2
+{
+    margin: 5px;
+}
+
+#one
+{
+    justify-self: end;
+}
+
+
+
